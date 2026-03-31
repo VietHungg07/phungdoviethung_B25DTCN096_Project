@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #FFFFFF;
+  color: #111;
+}
+
+.page {
+  position: relative;
+  width: calc(100% - 24px);
+  min-height: calc(100vh - 24px);
+  margin: 12px auto;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  overflow: hidden;
+}
+
+.close-btn {
+  position: absolute;
+  top: 86px;
+  right: 94px;
+  width: 22px;
+  height: 22px;
+  border: 2px solid #111;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 700;
+  color: #111;
+}
+
+.form-wrap {
+  width: calc(100% - 200px);
+  margin: 102px auto 0;
+  padding-bottom: 40px;
+}
+
+.form-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  color: #111;
+}
+
+.field {
+  margin-bottom: 14px;
+}
+
+.field label {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #111;
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  border: 1px solid #d7d7d7;
+  border-radius: 4px;
+  background: #fff;
+  outline: none;
+  font-size: 14px;
+  color: #222;
+}
+
+.field input,
+.field select {
+  height: 27px;
+  padding: 0 10px;
+}
+
+.field textarea {
+  height: 72px;
+  resize: none;
+  padding: 10px;
+}
+
+.field select {
+  background-color: #f4f4f4;
+}
+
+.status-row {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-top: 28px;
+  margin-bottom: 16px;
+}
+
+.status-label {
+  font-size: 14px;
+  font-weight: 700;
+  color: #111;
+  min-width: 52px;
+}
+
+.radio-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #222;
+  cursor: pointer;
+}
+
+.radio-item input {
+  width: 16px;
+  height: 16px;
+  accent-color: #111;
+}
+
+.upload-box {
+  width: 235px;
+  height: 66px;
+  border: 1px dashed #cfd8e3;
+  border-radius: 2px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  color: #6c7280;
+  margin-top: 8px;
+  margin-bottom: 18px;
+}
+
+.upload-icon {
+  font-size: 20px;
+  line-height: 1;
+  color: #111;
+  margin-bottom: 2px;
+}
+
+.upload-text {
+  text-align: center;
+  font-size: 11px;
+  line-height: 1.2;
+  color: #666;
+}
+
+.add-btn {
+  width: 37px;
+  height: 30px;
+  border: none;
+  border-radius: 4px;
+  background: #34a853;
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background: #2e9448;
+}

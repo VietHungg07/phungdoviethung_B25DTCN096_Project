@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add New Article</title>
+  <link rel="stylesheet" href="../css/addBlog.css" />
+</head>
+<body>
+  <div class="page">
+
+    <div class="close-btn" title="Close">×</div>
+
+    <main class="form-wrap">
+      <h1 class="form-title">📝 Add New Article</h1>
+
+      <div class="field">
+        <label for="title">Title:</label>
+        <input id="title" type="text" />
+      </div>
+
+      <div class="field">
+        <label for="category">Article Categories:</label>
+        <select id="category">
+          <option value="" selected></option>
+          <option value="daily">Daily Journal</option>
+          <option value="work">Work & Career</option>
+          <option value="thoughts">Personal Thoughts</option>
+          <option value="feelings">Emotions & Feelings</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="mood">Mood:</label>
+        <select id="mood">
+          <option value="happy" selected>😀 Happy</option>
+          <option value="sad">😢 Sad</option>
+          <option value="angry">😠 Angry</option>
+          <option value="calm">😌 Calm</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="content">Content:</label>
+        <textarea id="content"></textarea>
+      </div>
+
+      <div class="status-row">
+        <span class="status-label">Status</span>
+
+        <label class="radio-item">
+          <input type="radio" name="status" value="public" />
+          <span>public</span>
+        </label>
+
+        <label class="radio-item">
+          <input type="radio" name="status" value="private" />
+          <span>private</span>
+        </label>
+      </div>
+
+      <div class="upload-box">
+        <div class="upload-icon">☁</div>
+        <div class="upload-text">
+          Browse and chose the files you want<br />
+          to upload from your computer
+        </div>
+      </div>
+
+      <button class="add-btn">Add</button>
+    </main>
+  </div>
+</body>
+</html>

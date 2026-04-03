@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background-color: #ffffff;
+  border-bottom: 2px solid #ddd;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  color: #333;
+  font-size: 18px;
+}
+
+.logo span {
+  margin-left: 10px;
+}
+
+.search-box {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.search-box input {
+  width: 60%;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+}
+
+.search-box input:focus {
+  border-color: #999;
+}
+
+/* Layout chung */
+
+.details-container {
+    width: 100%;
+    display: flex;
+}
+.doc{
+    width: 2px;
+    margin-top: 100px;
+    background-color: #F7F8F9;
+    transform: translateX(6200%);
+    z-index: -10;
+    margin-bottom: 20px;
+}
+.size{
+    width: 90%;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Nút quay lại */
+.back-nav {
+    width: 24px;
+    height: 28px;
+
+}
+
+.back-btn {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #ddd;
+    background: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.article-detail, .comment-item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    font-weight: bold;
+
+}
+.comment-item{
+    margin-left: 70px;
+}
+
+.user-avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40px;
+}
+
+.user-avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+/* Box nội dung */
+.article-content-box, .comment-content-box {
+    flex: 1;
+    background-color: #f8f9fa; 
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.article-title {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #1a1a1a;
+}
+
+.article-text, .comment-text {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Nút Like/Reply */
+.article-actions {
+    display: flex;
+    gap: 20px;
+    font-size: 13px;
+    color: #667085;
+}
+
+.article-actions span {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Section bình luận */
+.comments-section {
+    margin-top: 30px;
+
+}
+
+.view-all-btn {
+    background: none;
+    border: none;
+    color: #027a48; 
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+    padding-left: 55px; 
+}
+.post-horizontal img{
+    width: 10px;
+}
+/* Responsive */
+@media (max-width: 600px) {
+    .article-detail, .comment-item {
+        gap: 10px;
+    }
+    .article-content-box, .comment-content-box {
+        padding: 15px;
+    }
+}
+
+.footer {
+  background: #ffffff;
+  padding: 60px 80px 30px;
+  border-top: 1px solid #ddd;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+.footer-col h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #222;
+}
+
+.footer-col h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.footer-col h5 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.footer-col p {
+  font-size: 13px;
+  color: #777;
+  line-height: 1.6;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.footer-col ul li:hover {
+  color: #000;
+}
+
+.footer-social {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.footer-social .icon {
+  margin: 0 10px;
+  font-size: 16px;
+  color: #555;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer-social .icon:hover {
+  color: #000;
+}
+.comments-section button{
+    display: flex;
+    align-items: center;
+}

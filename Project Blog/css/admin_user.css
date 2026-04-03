@@ -1,0 +1,467 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: 'Inter', sans-serif;
+}
+
+.header {
+    display: flex;
+
+    align-items: end;
+    justify-content: end;
+    padding: 15px 30px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+
+
+}
+
+.header img {
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    background-color: #fafafb;
+}
+
+.ss1 {
+    width: 25%;
+}
+
+.ss1 div {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.ss1 a {
+    width: 200px;
+    height: 32px;
+    top: 129px;
+    left: 68px;
+    angle: 0 deg;
+    opacity: 1;
+    border-radius: 6px;
+    gap: 8px;
+    padding-top: 4px;
+    padding-right: 12px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    background-color: #D7EDFF;
+    margin: 10px;
+    font-weight: bold;
+    color: #0E73F6;
+    box-shadow: 0 5px 5px 2px rgba(0, 0, 0, 0.29);
+    text-decoration: none;
+}
+
+.search-box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.search-box input {
+    width: 602px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    margin-left: 50px;
+
+}
+
+thead {
+    font-weight: 400;
+    color: black;
+}
+
+.search-box input:focus {
+    border-color: #999;
+}
+
+
+
+.ss2 .pp {
+    width: 305px;
+    height: 66px;
+    top: 75.45px;
+    display: flex;
+    left: 316.49px;
+    angle: 0 deg;
+    opacity: 1;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    gap: 10px;
+}
+
+.pp div {
+    width: 80px;
+    background-color: #F9F5FF;
+    border-radius: 15px;
+    padding: 5px;
+    color: #6941C6;
+    font-size: 13px;
+}
+
+.fun {
+    display: flex;
+}
+
+.table-container {
+    background-color: #ffffff;
+    border-bottom: 1px solid #EAECF0;
+    width: 100%;
+    overflow: hidden;
+    margin: 0px;
+}
+
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+/* Header của bảng */
+.user-table th {
+    background-color: #F9FAFB;
+    padding: 12px 24px;
+    font-size: 12px;
+    font-weight: 600;
+    color: black;
+    text-transform: none;
+    border-bottom: 1px solid #EAECF0;
+}
+
+.sort-icon {
+    font-size: 14px;
+    margin-left: 4px;
+    color: #667085;
+}
+
+/* Các ô dữ liệu */
+.user-table td {
+    padding: 16px 24px;
+    border-bottom: 1px solid #EAECF0;
+    vertical-align: middle;
+}
+
+/* Cột User Info (Avatar + Name) */
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.avatar-circle-text {
+    width: 40px;
+    height: 40px;
+    background-color: #F9F5FF;
+    color: #7F56D9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.user-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #101828;
+    margin: 0;
+}
+
+.user-handle {
+    font-size: 14px;
+    color: #667085;
+    margin: 0;
+}
+
+/* Cột Status & Email */
+.status-text,
+.email-text {
+    font-size: 14px;
+    color: #101828;
+}
+
+.email-text {
+    color: #667085;
+}
+
+/* Cột Actions */
+.action-group {
+    display: flex;
+    gap: 12px;
+}
+
+.action-btn {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: #6941C6;
+    background-color: #F9F5FF;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.action-look {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: #175CD3;
+    background-color: #EFF8FF;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.action-btn:hover {
+    text-decoration: underline;
+}
+
+/* Loại bỏ gạch chân ở hàng cuối cùng */
+.user-table tr:last-child td {
+    border-bottom: none;
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: space-between;
+    /* max-width: px; */
+    margin: auto;
+    align-items: center;
+    padding: 20px 24px;
+    background-color: transparent;
+    margin-top: 10px;
+}
+
+/* Định dạng nút Previous và Next */
+.pagination-nav {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
+    background-color: #ffffff;
+    border: 1px solid #D0D5DD;
+    border-radius: 8px;
+    color: #344054;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    transition: all 0.2s ease;
+}
+
+.pagination-nav:hover {
+    background-color: #F9FAFB;
+}
+
+/* Cụm số ở giữa */
+.pagination-numbers {
+    display: flex;
+    gap: 2px;
+}
+
+/* Từng ô số trang */
+.page-item {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #667085;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.page-item:hover {
+    background-color: #EFF8FF;
+    color: #101828;
+}
+
+/* Trang đang được chọn */
+.page-item.active {
+    background-color: #EAECF0;
+    color: #6941C6;
+}
+
+.page-item.dots {
+    cursor: default;
+}
+
+.page-item.dots:hover {
+    background-color: transparent;
+}
+
+.icon {
+    font-size: 16px;
+}
+
+.col-status {
+    color: #000;
+    font-weight: bold;
+}
+
+/* Nội dung Status */
+.status-text {
+    color: #000;
+    font-weight: bold;
+}
+
+.action-btn,
+.action-look {
+    font-weight: 500;
+}
+
+.pagination-nav {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    background-color: #fff;
+    border: 1px solid #D0D5DD;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* icon */
+.icon img {
+    width: 14px;
+    height: 14px;
+    display: block;
+}
+
+.user-table th {
+    vertical-align: middle;
+}
+
+/* gom text + icon */
+.user-table th .sort-icon {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 4px;
+}
+
+.sort-icon img {
+    width: 12px;
+    height: 12px;
+    display: block;
+}
+
+.user-table th,
+.user-table td {
+    vertical-align: middle;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    /* đảm bảo không lệch */
+    gap: 12px;
+}
+
+.user-meta p {
+    margin: 0;
+    line-height: 1.2;
+    /* tránh bị lệch do line-height */
+}
+
+.sort-icon {
+    display: inline-flex;
+    align-items: center;
+}
+
+.sort-icon img {
+    width: 12px;
+    height: 12px;
+    margin-left: 4px;
+}
+
+/* FIX thẳng hàng toàn bộ bảng */
+.user-table th,
+.user-table td {
+    vertical-align: middle;
+    line-height: 1.4;
+}
+
+/* header: text + icon nằm ngang */
+.user-table th {
+    white-space: nowrap;
+    /* tránh xuống dòng */
+}
+
+/* icon A-Z */
+.sort-icon {
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+}
+
+/* NAME (avatar + text) */
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+/* tránh lệch do text */
+.user-meta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* STATUS luôn giữa */
+.status-text {
+    display: inline-flex;
+    align-items: center;
+}
+
+/* ACTION luôn giữa */
+.action-group {
+    display: flex;
+    align-items: center;
+}
+
+/* FIX CỨNG nếu vẫn lệch */
+.user-table tr {
+    height: 72px;
+}
+
+.ss2 {
+    margin-top: 30px;
+    padding: 0 24px;
+}
+
+.col-name {
+    width: 40%;
+}
+
+.tr th {
+    font-size: 15.68px;
+    font-weight: 400;
+}
+.status-text{
+    font-weight: 500;
+}

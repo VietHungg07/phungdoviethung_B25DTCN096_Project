@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Header</title>
+    <link rel="stylesheet" href="../css/entries_admin.css">
+</head>
+
+<body>
+
+    <div class="header">
+
+        <img src="../image/Mail.png" alt="">
+        <img src="../image/Bell.png" alt="">
+        <img src="../image/Ellipse 6.png" alt="">
+
+
+
+
+    </div>
+    <main>
+        <section class="ss1">
+            <div>
+                <a href="../html/admin_user.html">🧑‍🦯‍➡️ Manage Users</a>
+                <a href="../html/entries_admin.html">📕 Manage Entries</a>
+                <a href="../html/blog_admin.html">📖 Manage Article</a>
+                <a href="../html/login.html">🚪 Log out</a>
+            </div>
+        </section>
+        <section class="ss2">
+            <div class="fun">
+                <div class="pp">
+
+                </div>
+                <div class="search-box">
+                    <input type="text" placeholder="Search for articles">
+                </div>
+            </div>
+
+            <div class="size">
+                <div class="manage-categories-container">
+                    <h2 class="main-title">📂 Manage Categories</h2>
+                    <div class="category-form">
+                        <label for="category-name">Category Name:</label>
+                        <input type="text" id="category-name" placeholder="Enter category name">
+                        <button class="btn-add" id="addBtn">Add Category</button>
+                    </div>
+
+                    <h3 class="list-title">📋 Category List</h3>
+                    <table class="category-table">
+                        <thead>
+                            <tr>
+                                <th class="col-id">#</th>
+                                <th class="col-name">Category Name</th>
+                                <th class="col-actions">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="categoryTable"></tbody>
+                    </table>
+                </div>
+                <div style="width: 1000px;  "></div>
+            </div>
+
+        </section>
+    </main>
+    <script src="../js/entries_admin.js"></script>
+</body>
+
+</html>

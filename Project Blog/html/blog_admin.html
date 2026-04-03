@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Header</title>
+  <link rel="stylesheet" href="../css/blog_admin.css">
+</head>
+
+<body>
+
+  <div class="header">
+    <img src="../image/Mail.png" alt="">
+    <img src="../image/Bell.png" alt="">
+    <img src="../image/Ellipse 6.png" alt="">
+
+
+
+
+  </div>
+  <main>
+    <section class="ss1">
+      <div>
+           <a href="../html/admin_user.html">🧑‍🦯‍➡️ Manage Users</a>
+        <a href="../html/entries_admin.html">📕 Manage Entries</a>
+        <a href="../html/blog_admin.html">📖 Manage Article</a>
+        <a href="../html/login.html">🚪 Log out</a>
+      </div>
+    </section>
+    <section class="ss2">
+      <div class="fun">
+        <div class="pp">
+          
+        </div>
+        <div class="search-box">
+          <input type="text" placeholder="Search for articles">
+        </div>
+      </div>
+      <div class="article-manager-container">
+    <div class="article-header">
+        <button class="btn-add-new">Thêm mới bài viết</button>
+        <h2 class="title-page">Quản lý bài viết</h2>
+    </div>
+
+    <div class="table-responsive">
+        <table class="article-table">
+            <thead>
+                <tr>
+                    <th>Ảnh</th>
+                    <th>Tiêu đề</th>
+                    <th>Chủ đề</th>
+                    <th>Nội dung</th>
+                    <th>Trạng thái</th>
+                    <th>Chỉnh sửa trạng thái</th>
+                    <th>Hành động</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="../image/Bài viết 1.png" alt="cooking" class="img-thumb"></td>
+                    <td>Học nấu cá sốt cà chua</td>
+                    <td>Nấu ăn</td>
+                    <td class="text-truncate">tôi đã học được cách nấu ăn...</td>
+                    <td><span class="badge badge-public">Public</span></td>
+                    <td>
+                        <select class="select-status">
+                            <option>Public</option>
+                            <option>Private</option>
+                        </select>
+                    </td>
+                    <td>
+                        <div class="btn-actions">
+                            <button class="btn-edit">Sửa</button>
+                            <button class="btn-delete">Xóa</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="../image/Bài viết 2.png" alt="it-cv" class="img-thumb"></td>
+                    <td>Bí kíp viết CV ngành IT</td>
+                    <td>IT</td>
+                    <td class="text-truncate">Chia sẻ cách viết CV ấn tượng...</td>
+                    <td><span class="badge badge-private">Private</span></td>
+                    <td>
+                        <select class="select-status">
+                            <option>Private</option>
+                            <option>Public</option>
+                        </select>
+                    </td>
+                    <td>
+                        <div class="btn-actions">
+                            <button class="btn-edit">Sửa</button>
+                            <button class="btn-delete">Xóa</button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="pagination-footer">
+        <button class="btn-p-nav"><img src="../image/arrow-left.png" alt=""> Previous</button>
+        <div class="p-numbers">
+            <span class="p-num active">1</span>
+            <span class="p-num">2</span>
+            <span class="p-num">3</span>
+            <span class="p-dots">...</span>
+            <span class="p-num">8</span>
+            <span class="p-num">9</span>
+            <span class="p-num">10</span>
+        </div>
+        <button class="btn-p-nav">Next <img src="../image/arrow-right.png" alt=""></button>
+    </div>
+</div>
+    </section>
+  </main>
+
+</body>
+
+</html>

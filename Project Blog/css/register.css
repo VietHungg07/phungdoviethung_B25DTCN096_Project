@@ -78,3 +78,13 @@ button {
     font-weight: normal;
 }
 
+.error {
+    color: red;
+    font-size: 12px;
+    display: block;
+    margin-top: 4px;
+}
+
+input.error-input {
+    border: 1px solid red;
+}

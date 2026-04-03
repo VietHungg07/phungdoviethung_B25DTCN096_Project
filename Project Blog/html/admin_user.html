@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Header</title>
+  <link rel="stylesheet" href="../css/admin_user.css">
+</head>
+
+<body>
+
+  <div class="header">
+
+    <img src="../image/Mail.png" alt="">
+    <img src="../image/Bell.png" alt="">
+    <img src="../image/Ellipse 6.png" alt="">
+
+
+
+  </div>
+  <main>
+    <section class="ss1">
+      <div>
+        <a href="../html/admin_user.html">🧑‍🦯‍➡️ Manage Users</a>
+        <a href="../html/entries_admin.html">📕 Manage Entries</a>
+        <a href="../html/blog_admin.html">📖 Manage Article</a>
+        <a href="../html/login.html">🚪 Log out</a>
+      </div>
+    </section>
+    <section class="ss2">
+      <div class="fun">
+        <div class="pp">
+          <span>Team members </span><div>100 Users</div>
+        </div>
+        <div class="search-box">
+          <input type="text" placeholder="Search user">
+        </div>
+      </div>
+      <div class="table-container">
+  <table class="user-table">
+    <thead>
+      <tr class="tr">
+        <th class="col-name">Name <span class="sort-icon"><img src="../image/Vector (3).png" alt=""></span></th>
+        <th class="col-status">Status <span class="sort-icon"><img src="../image/arrow-down.png" alt=""></span></th>
+        <th class="col-email">Email address</th>
+        <th class="col-actions">Actions</th>
+      </tr>
+    </thead>
+    <tbody id="userTableBody"><!-- 
+      <tr>
+        <td>
+          <div class="user-info">
+            <img src="../image/Avatar (3).png" alt="Olivia" class="avatar">
+            <div class="user-meta">
+              <p class="user-name">Olivia Rhye</p>
+              <p class="user-handle">@olivia</p>
+            </div>
+          </div>
+        </td>
+        <td><span class="status-text">hoạt động</span></td>
+        <td class="email-text">olivia@untitledui.com</td>
+        <td>
+          <div class="action-group">
+            <a href="#" class="action-btn">block</a>
+            <a href="#" class="action-look">unblock</a>
+          </div>
+        </td>
+      </tr>
+         <tr>
+        <td>
+          <div class="user-info">
+            <img src="../image/Avatar (4).png" alt="Olivia" class="avatar">
+            <div class="user-meta">
+              <p class="user-name">Phoenix Baker</p>
+              <p class="user-handle">@phoneix</p>
+            </div>
+          </div>
+        </td>
+        <td><span class="status-text">hoạt động</span></td>
+        <td class="email-text">phoneix@untitledui.com</td>
+        <td>
+          <div class="action-group">
+            <a href="#" class="action-btn">block</a>
+            <a href="#" class="action-look">unblock</a>
+          </div>
+        </td>
+      </tr>
+         <tr>
+        <td>
+          <div class="user-info">
+            <img src="../image/Avatar (5).png" alt="Olivia" class="avatar">
+            <div class="user-meta">
+              <p class="user-name">Lana Steiner</p>
+              <p class="user-handle">@lana</p>
+            </div>
+          </div>
+        </td>
+        <td><span class="status-text">hoạt động</span></td>
+        <td class="email-text">lana@untitledui.com</td>
+        <td>
+          <div class="action-group">
+            <a href="#" class="action-btn">block</a>
+            <a href="#" class="action-look">unblock</a>
+          </div>
+        </td>
+      </tr>
+         <tr>
+        <td>
+          <div class="user-info">
+            <img src="../image/Avatar (6).png" alt="Olivia" class="avatar">
+            <div class="user-meta">
+              <p class="user-name">Demi Wilkinson</p>
+              <p class="user-handle">@demi</p>
+            </div>
+          </div>
+        </td>
+        <td><span class="status-text">hoạt động</span></td>
+        <td class="email-text">demi@untitledui.com</td>
+        <td>
+          <div class="action-group">
+            <a href="#" class="action-btn">block</a>
+            <a href="#" class="action-look">unblock</a>
+          </div>
+        </td>
+      </tr>
+         <tr>
+        <td>
+          <div class="user-info">
+            <img src="../image/Avatar (7).png" alt="Olivia" class="avatar">
+            <div class="user-meta">
+              <p class="user-name">Candice Wu </p>
+              <p class="user-handle">@candice</p>
+            </div>
+          </div>
+        </td>
+        <td><span class="status-text">hoạt động</span></td>
+        <td class="email-text">candice@untitledui.com</td>
+        <td>
+          <div class="action-group">
+            <a href="#" class="action-btn">block</a>
+            <a href="#" class="action-look">unblock</a>
+          </div>
+        </td>
+      </tr>
+         <tr>
+        <td>
+          <div class="user-info">
+            <img src="../image/Avatar (8).png" alt="Olivia" class="avatar">
+            <div class="user-meta">
+              <p class="user-name">Natali Craig</p>
+              <p class="user-handle">@natali</p>
+            </div>
+          </div>
+        </td>
+        <td><span class="status-text">hoạt động</span></td>
+        <td class="email-text">natali@untitledui.com</td>
+        <td>
+          <div class="action-group">
+            <a href="#" class="action-btn">block</a>
+            <a href="#" class="action-look">unblock</a>
+          </div>
+        </td>
+      </tr>
+         <tr>
+        <td>
+          <div class="user-info">
+            <img src="../image/Avatar (9).png" alt="Olivia" class="avatar">
+            <div class="user-meta">
+              <p class="user-name">Drew Cano</p>
+              <p class="user-handle">@drew</p>
+            </div>
+          </div>
+        </td>
+        <td><span class="status-text">hoạt động</span></td>
+        <td class="email-text">drew@untitledui.com</td>
+        <td>
+          <div class="action-group">
+            <a href="#" class="action-btn">block</a>
+            <a href="#" class="action-look">unblock</a>
+          </div>
+        </td>
+      </tr>
+         <tr>
+        <td>
+          <div class="user-info">
+            <img src="../image/Avatar (10).png" alt="Olivia" class="avatar">
+            <div class="user-meta">
+              <p class="user-name">Orlando Diggs</p>
+              <p class="user-handle">@orlando</p>
+            </div>
+          </div>
+        </td>
+        <td><span class="status-text">hoạt động</span></td>
+        <td class="email-text">orlando@untitledui.com</td>
+        <td>
+          <div class="action-group">
+            <a href="#" class="action-btn">block</a>
+            <a href="#" class="action-look">unblock</a>
+          </div>
+        </td>
+      </tr>
+         <tr>
+        <td>
+          <div class="user-info">
+            <img src="../image/Avatar (11).png" alt="Olivia" class="avatar">
+            <div class="user-meta">
+              <p class="user-name">Andi Lane</p>
+              <p class="user-handle">@andi</p>
+            </div>
+          </div>
+        </td>
+        <td><span class="status-text">hoạt động</span></td>
+        <td class="email-text">andi@untitledui.com</td>
+        <td>
+          <div class="action-group">
+            <a href="#" class="action-btn">block</a>
+            <a href="#" class="action-look">unblock</a>
+          </div>
+        </td>
+      </tr>
+         <tr>
+        <td>
+          <div class="user-info">
+            <img src="../image/Avatar (12).png" alt="Olivia" class="avatar">
+            <div class="user-meta">
+              <p class="user-name">Kate Morrison</p>
+              <p class="user-handle">@kate</p>
+            </div>
+          </div>
+        </td>
+        <td><span class="status-text">hoạt động</span></td>
+        <td class="email-text">kate@untitledui.com</td>
+        <td>
+          <div class="action-group">
+            <a href="#" class="action-btn">block</a>
+            <a href="#" class="action-look">unblock</a>
+          </div>
+        </td>
+      </tr> -->
+    </tbody>
+  </table>
+</div>
+<div class="pagination-container">
+  <button class="pagination-nav">
+    <span class="icon"><img src="../image/arrow-left.png" alt=""></span> Previous
+  </button>
+
+  <div class="pagination-numbers">
+    <span class="page-item active">1</span>
+    <span class="page-item">2</span>
+    <span class="page-item">3</span>
+    <span class="page-item dots">...</span>
+    <span class="page-item">8</span>
+    <span class="page-item">9</span>
+    <span class="page-item">10</span>
+  </div>
+
+  <button class="pagination-nav">
+    Next <span class="icon"><img src="../image/arrow-right.png" alt=""></span>
+  </button>
+</div>
+    </section>
+  </main>
+<script src="../js/admin_user.js"></script>
+</body>
+
+</html>
